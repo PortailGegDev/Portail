@@ -1,0 +1,12 @@
+{
+  "/api": {
+    "target": "https://geg-api.test.apimanagement.eu10.hana.ondemand.com:443",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}
+
+

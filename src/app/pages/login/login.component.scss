@@ -1,0 +1,604 @@
+
+// html, body {
+//   height: 100%;
+//   margin: 0;
+// }
+
+// body {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .main-content {
+//   flex: 1;
+// }
+// .login-container {
+//   display: flex;
+//   max-height: 630px;
+//   background: var(--Fundamental-Page-background-Grey, #F8F6F5);
+// }
+// .login-box {
+//   padding: 40px 64px 2px 64px;
+//   top: 127px;
+//   background: white;
+//   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+//   border-radius: 4px;
+//   display: inline-flex;
+//   flex-direction: column;
+//   justify-content: flex-end;
+//   align-items: center;
+//   max-height: 550px;
+// }
+// .image-section {
+//   flex: 1;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-size: cover;
+ 
+// }
+// .image-section img {
+//   width: 100%;
+//   height: 100%;
+// }
+// .login-section {
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   color: rgba(84, 78, 78, 0.70);
+//   padding: 15px; /* Reduced padding to make the box smaller */
+//   /* max-width: 450px; */ /* Reduced max width to make the box smaller */
+//   max-width: 80%;
+//   box-sizing: border-box;
+//   overflow-y: auto;
+//   /* margin: auto; */
+// }
+// label[for="email"], label[for="password"] {
+//   align-self: stretch;
+//   color: var(--Fundamental-Grey-70, rgba(84, 78, 78, 0.70));
+//   /* Headline */
+//   font-family: Figtree;
+//   font-size: 11px;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: normal;
+//   letter-spacing: 0.44px;
+//   text-transform: uppercase;
+// }
+.forgot-password, .signup-text a {
+  color: var(--Brand-Primary-600, #AAB614);
+  color: var(--Brand-Primary-600, #AAB614);
+  text-decoration: none;
+font-family: Figtree;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+// .logo-container {
+//   text-align: center;
+//   margin-bottom: 5px;
+// }
+
+// .logo {
+//   width: 50px;
+//   height: auto;
+// }
+
+// h1 {
+//   font-size: 26px;
+//   font-weight: bold;
+//   text-align: center;
+//   line-height: 1.2;
+//   margin-bottom: 10px;
+// }
+
+// .intro-text {
+//   color: var(--Absolute-Black, #1E1E1E);
+//   /* Desktop/H4 */
+//   font-family: Figtree;
+//   font-size: 18px;
+//   font-style: normal;
+//   font-weight: 500;
+//   line-height: 120%; /* 21.6px */
+//   letter-spacing: -0.18px;
+// }
+
+// form {
+//   width: 100%;
+//   max-width: 350px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+}
+
+// input {
+//   width: 100%;
+//   padding: 10px;
+//   margin-top: 5px;
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+// }
+
+// .password-container {
+//   position: relative;
+//   width: 100%;
+// }
+
+// .toggle-password {
+//   position: absolute;
+//   right: 10px;
+//   top: 10px;
+//   cursor: pointer;
+// }
+
+.forgot-password {
+  align-self: stretch;
+  color: var(--Brand-Primary-600, #AAB614);
+  text-decoration: none;
+  font-family: Figtree;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 8px;
+}
+// .login-button {
+//   border: none;
+//   padding: 15px;
+//   border-radius: 5px;
+//   margin-top: 20px;
+//   cursor: pointer;
+//   font-size: 16px;
+//   width: 100%;
+//   display: flex;
+//   height: 44px;
+//   color: var(--Brand-Primary-CTA-text, #1E1E1E);
+//   font-family: Figtree;
+//   font-size: 16px;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: normal;
+//   padding: 10px var(--Dimensions-Padding-12, 12px);
+//   justify-content: center;
+//   align-items: center;
+//   gap: 4px;
+//   align-self: stretch;
+//   border-radius: var(--Borders-radius-Radius-CTA, 4px);
+//   background: var(--Brand-Primary-500, #D4E22C);
+// }
+
+// .signup-text {
+//   align-self: stretch;
+//   color: var(--Fundamental-Grey-60, rgba(84, 78, 78, 0.60));
+//   text-align: center;
+//   /* Body/S/Regular */
+//   font-family: Figtree;
+//   font-size: 15px;
+//   font-style: normal;
+//   font-weight: 500;
+//   line-height: 130%; /* 19.5px */
+//   margin-top: 20px;
+// }
+
+// .signup-text a {
+//   color: var(--Brand-Primary-600, #AAB614);
+//   /* Button txt/M */
+//   font-family: Figtree;
+//   font-size: 16px;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: normal;
+//   cursor: pointer;
+// }
+// .footer {
+//   margin-left: 30px;
+//   margin-right: 50px;
+//   padding: 10px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   font-size: 13px;
+//   color: #333;
+// }
+
+// .footer-content {
+//   display: flex;
+//   align-items: center;
+//   flex-wrap: wrap;
+// }
+
+// .footer-content img.logo {
+//   width: 40px;
+//   height: auto;
+//   margin-right: 15px;
+// }
+
+// .footer a {
+//   text-decoration: underline;
+//   color: #9b9b9b;
+// }
+
+// .footer a:hover {
+//   text-decoration: underline;
+// }
+
+// .social-media {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   font-weight: bold;
+// }
+
+// .social-media a img {
+//   width: 30px;
+//   height: 30px;
+//   transition: transform 0.3s ease;
+// }
+
+// .social-media a:hover img {
+//   transform: scale(1.1);
+// }
+.follow-text {
+  color: var(--Fundamental-Grey-90, #544E4E);
+  /* Body/S/Regular */
+  font-family: Figtree;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 19.5px */
+  color: #333; /* Couleur du texte */
+}
+// @media (max-width: 768px) {
+//   .footer {
+//     flex-direction: column;
+//     text-align: center;
+//   }
+  
+//   .footer-content,
+//   .social-media {
+//     justify-content: center;
+//     margin-bottom: 10px;
+//   }
+// }
+
+
+/* Style de base pour le corps */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content {
+  flex: 1;
+  width: -webkit-fill-available;
+}
+
+/* Container de connexion */
+.login-container {
+  display: flex;
+  height: 640px;
+  flex-direction: row;
+  background: var(--Fundamental-Page-background-Grey, #F8F6F5); 
+  box-sizing: border-box;
+}
+
+/* Section de la boîte de connexion */
+.login-box {
+  padding: 40px;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 520px;
+  width: 100%;
+}
+
+/* Section image */
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// .image-section img {
+//   width: 80%;
+//   max-width: 200px;
+//   height: auto;
+// }
+
+/* Section du formulaire de connexion */
+.login-section {
+  color: rgba(84, 78, 78, 0.70);
+  max-width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  padding: 20px 20px;
+  flex: 1;
+  margin-top: 0; /* Aucune marge en haut */
+  align-items: center;
+  justify-content: center;
+}
+
+label[for="email"], label[for="password"] {
+  align-self: stretch;
+  color: var(--Fundamental-Grey-70, rgba(84, 78, 78, 0.70));
+  font-family: Figtree;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+.logo-container {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+h1 {
+  color: var(--Absolute-Black, #1E1E1E);
+  /* Desktop/H1 */
+  font-family: Figtree;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  letter-spacing: -0.36px;
+}
+
+.intro-text {
+  color: var(--Absolute-Black, #1E1E1E);
+  font-family: Figtree;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+form {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.login-button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 14px;
+  width: 100%;
+  background: var(--Brand-Primary-500, #D4E22C);
+  color: var(--Brand-Primary-CTA-text, #1E1E1E);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+font-family: Figtree;
+font-size: 16px;
+font-style: normal;
+line-height: normal;
+}
+
+.signup-text {
+  color: var(--Fundamental-Grey-60, rgba(84, 78, 78, 0.60));
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: -2px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #333;
+  padding: 10px 20px;
+}
+.footer-content img.logo {
+  width: 35px;
+  height: auto;
+}
+.footer a {
+  color: #9b9b9b;
+  text-decoration: underline;
+}
+.social-media a img {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 1024px) {
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-section img {
+    width: 70%;
+    max-width: 180px;
+  }
+
+  .login-box {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 11px;
+  }
+}
+
+/* Responsive pour les écrans de mobiles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 14px;
+  }
+
+  .login-button {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .image-section img {
+    width: 60%;
+  }
+
+  .footer {
+    flex-direction: column;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .image-section img {
+    width: 50%;
+  }
+
+  .signup-text {
+    font-size: 13px;
+  }
+
+  .forgot-password {
+    font-size: 12px;
+    text-decoration: none;
+
+  }
+}
+.image-section img {
+  height:100%;
+  width: 100%;  
+  overflow: hidden;
+}
+
+
+
+/* Media queries pour ajuster les styles en fonction de la taille de l'écran */
+@media (min-width: 1900px) {
+  .login-container{
+      height: 855px; /* Hauteur spécifique pour les grands écrans */
+  }
+}
+
+@media (min-width: 300px) and (max-width: 1024px) {
+  .login-container {
+      height: 850px; /* Hauteur spécifique pour les écrans entre 300px et 600px de largeur */
+  }
+}
+
+
+
+// /* Ajout d'une media query pour les écrans avec une hauteur supérieure à 1900px */
+// @media (min-height: 1900px) {
+//   .main-content {
+//       justify-content: flex-start; /* Aligne le contenu en haut */
+//       height: 100%; /* Prend toute la hauteur de la vue */
+//   }
+// }
+
+
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+.footer-link {
+  margin: 0 10px; /* Ajoute un espace de chaque côté pour les liens */
+  font-size: 14px;
+  color: var(--Fundamental-Grey-30, rgba(84, 78, 78, 0.30));
+  text-align: right;
+  font-family: Figtree;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 19.5px */
+  text-decoration-line: underline;}
+  .footer-note{
+    color: rgb(84 78 78 / 64%);
+text-align: right;
+font-family: Figtree;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%;
+margin-left: 10px;
+  }
+  .conseiller{
+    color: var(--Fundamental-Grey-90, #544E4E);
+font-family: Figtree;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%;
+margin-right: 10px;
+margin-left: 5px;
+  }

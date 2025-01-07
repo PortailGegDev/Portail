@@ -1,0 +1,7 @@
+applications:
+  - name: geg-portal
+    buildpack: staticfile_buildpack
+    memory: 2048MB
+    disk_quota: 2048MB
+    instances: 1
+    path: dist/geg-portal-wael-kharrat 

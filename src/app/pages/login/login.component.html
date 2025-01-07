@@ -1,0 +1,72 @@
+<body>
+  <div class="main-content">
+<div class="login-container">
+  <div class="image-section">
+    <img src="../../../assets/images/img (3).png" alt="Woman with laptop">
+  </div>
+  <div class="login-section">
+    <div class="login-box">
+    <div class="logo-container">
+      <img src="assets/images/logo_GEG.jpg" alt="GEG logo" class="logo">
+    </div>
+    <h1>Bienvenue sur votre <br> espace client GEG</h1>
+    <p class="intro-text">Connectez-vous pour accéder à tous vos services</p>
+    <form (ngSubmit)="onSubmit()">
+      <label for="email">ADRESSE E-MAIL</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" required>
+      <div *ngIf="!email" class="error"></div>
+
+
+      <label for="password">MOT DE PASSE</label>
+      <div class="password-container">
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+        <span class="toggle-password" (click)="togglePasswordVisibility()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14.5417 12C14.5417 13.6569 13.1986 15 11.5417 15C9.88489 15 8.54175 13.6569 8.54175 12C8.54175 10.3431 9.88489 9 11.5417 9C13.1986 9 14.5417 10.3431 14.5417 12Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5422 5C7.06456 5 3.27427 7.94288 2 12C3.27425 16.0571 7.06455 19 11.5422 19C16.0198 19 19.8101 16.0571 21.0844 12C19.8101 7.94291 16.0198 5 11.5422 5Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+      <div *ngIf="!password" class="error"></div>
+      <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+      <div class="brand-selector">
+        <button (click)="chooseBrand('geg')">GEG</button>
+        <button (click)="chooseBrand('yeli')">Yeli</button>
+      </div>
+      <div *ngIf="!chooseBrand && submitted" class="error"></div>
+      <button type="submit" class="login-button" >Me connecter</button>
+    </form>
+
+    <!-- <p class="signup-text">Vous n'avez pas de compte ?
+      <br>
+       <a >Créer un compte </a>
+       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M5 10.0002H15M15 10.0002L10.8333 5.8335M15 10.0002L10.8333 14.1668" stroke="#AAB614" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </p> -->
+  </div>
+</div></div>
+
+<!-- Footer section -->
+<div class="footer">
+  <span class="footer-content">
+    <img src="assets/images/logo_GEG.jpg" alt="GEG logo" class="logo">
+    
+    <span class="footer-contact">
+        <svg style="margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+            <path d="M6.52502 4C7.01339 4.09528 7.46222 4.33413 7.81406 4.68597C8.1659 5.03781 8.40474 5.48663 8.50002 5.975M6.52502 2C7.53966 2.11272 8.48582 2.56709 9.20815 3.2885C9.93047 4.00992 10.386 4.9555 10.5 5.97M8.75 11.5C4.46979 11.5 1 8.03021 1 3.75C1 3.55689 1.00706 3.36543 1.02094 3.17586C1.03688 2.95831 1.04484 2.84953 1.10185 2.75052C1.14907 2.66851 1.23275 2.59073 1.31799 2.54963C1.42091 2.5 1.54094 2.5 1.78101 2.5H3.18966C3.39154 2.5 3.49248 2.5 3.57901 2.53323C3.65545 2.56257 3.72351 2.61024 3.77721 2.67205C3.83801 2.74202 3.8725 2.83688 3.94149 3.02661L4.52455 4.63002C4.60482 4.85076 4.64496 4.96113 4.63814 5.06585C4.63214 5.15818 4.60062 5.24704 4.54711 5.32253C4.48643 5.40814 4.38573 5.46856 4.18432 5.58941L3.5 6C4.10095 7.32444 5.17507 8.39995 6.5 9L6.91059 8.31568C7.03144 8.11427 7.09186 8.01357 7.17747 7.95289C7.25296 7.89938 7.34182 7.86786 7.43415 7.86186C7.53887 7.85504 7.64924 7.89518 7.86998 7.97545L9.47339 8.55851C9.66312 8.6275 9.75798 8.66199 9.82795 8.72279C9.88976 8.77649 9.93743 8.84455 9.96677 8.92099C10 9.00752 10 9.10846 10 9.31034V10.719C10 10.9591 10 11.0791 9.95037 11.182C9.90927 11.2672 9.83149 11.3509 9.74948 11.3981C9.65047 11.4552 9.54169 11.4631 9.32414 11.4791C9.13457 11.4929 8.94311 11.5 8.75 11.5Z" stroke="#544E4E" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span  class="conseiller">Joindre un conseiller 04 76 84 20 00 du lundi au vendredi de 8h à 19h</span> |
+    </span>
+    
+    <a href="#" class="footer-link">Mentions légales</a> |
+    <a href="#" class="footer-link">CGV</a> |
+    
+    <span class="footer-note">L'énergie est notre avenir, économisons-la !</span>
+</span>
+  <span class="social-media">
+    <span class="follow-text">Nous suivre</span>
+    <a href="#"><img src="assets/images/logo_instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="assets/images/logo_youtube.png" alt="Youtube"></a>
+    <a href="#"><img src="assets/images/logo_twitter_x.png" alt="Twitter"></a>
+    <a href="#"><img src="assets/images/logo_linkedin.png" alt="LinkedIn"></a>
+    <a href="#"><img src="assets/images/logo_facebook.png" alt="Facebook"></a>
+  </span>
+</div></div>
+</body>

@@ -1,0 +1,400 @@
+:host {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  .custom-container {
+    width: 30px;
+    height: 100%;
+    padding: 5px 3px;
+    background: white;
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.03);
+    border-radius: 4px;
+      cursor: pointer;
+      margin-left: 20px;
+  }
+  /* Conteneur pour aligner le titre et le bouton sur la même ligne */
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+ 
+  }
+  
+  h1 {
+    margin-left: 20px;
+    color: #3A3A3A;
+    font-size: 36px;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  
+  /* Conteneur du bouton */
+  .button-container {
+    display: flex;
+    padding: 10px 12px;
+    margin-right: 20px;
+    background: #D4E22C;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  /* Texte du bouton */
+  .button-text-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 4px;
+  }
+  
+  .button-text {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  body {
+    font-family: 'Figtree', sans-serif; /* Assurez-vous que la police est importée */
+}
+
+.containerr {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500; /* Poids commun pour les textes */
+}
+
+.icon {
+    width: 13.33px;
+    height: 13.33px;
+}
+
+.date {
+    color: #3A3A3A;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.title {
+    color: #544E4E;
+    font-size: 18px;
+    line-height: 21.6px;
+    display: flex;
+width: 220px;
+padding: 10px 0px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Dimensions-Padding-8, 8px);
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    display: flex;
+width: 360px;
+padding: 10px 0px;
+align-items: flex-start;
+gap: var(--Dimensions-Padding-8, 8px);
+}
+
+.status-circle {
+    width: 24px;
+    height: 24px;
+    background: #14A3A0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contract {
+    color: rgba(84, 78, 78, 0.70);
+    font-size: 16px;
+}
+
+.status {
+    display: flex;
+    height: var(--Dimensions-Padding-32, 32px);
+    padding: var(--Dimensions-Padding-8, 8px) 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: var(--Dimensions-Padding-8, 8px);
+    
+    background: var(--Semantic-Primary, #64DAE4);
+}
+
+.status-text {
+    color: #544E4E;
+    font-size: 16px;
+    font-weight: 600; /* Poids pour le texte du statut */
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 10px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 4px;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.email-thread {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.email-header {
+  align-self: stretch;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(84, 78, 78, 0.2);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-details {
+  width: 202px;
+  height: 41px;
+  position: relative;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 95px;
+  top: 22px;
+}
+
+.arrow {
+  width: 6.67px;
+  height: 3.33px;
+  position: absolute;
+  left: 4.67px;
+  top: 6.67px;
+  background: #606367;
+}
+
+.email-info {
+  position: absolute;
+  left: 56px;
+  top: 2px;
+}
+
+.from-label {
+  color: #3A3A3A;
+  font-size: 16px;
+  font-family: Figtree;
+  font-weight: 600;
+}
+.to-me {
+  color: var(--Fundamental-Grey-70, rgba(84, 78, 78, 0.70));
+  font-family: Arial;
+  font-size: 15px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; 
+}
+.time-info {
+  text-align: right;
+  color: rgba(84, 78, 78, 0.7);
+  font-size: 12px;
+  font-family: Figtree;
+  font-weight: 400;
+}
+.icon1{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 160px;
+  top: 22px;
+}
+.dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* S'assurer que le dropdown est au-dessus des autres éléments */
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #f1f1f1;
+}
+/* Style pour l'objet */
+.objet {
+  color: #544E4E;
+  font-size: 18px;
+  font-family: Figtree;
+  font-weight: 500;
+  line-height: 21.60px;
+  word-wrap: break-word;
+}
+
+/* Style pour le texte du corps du message */
+.message {
+  color: rgba(84, 78, 78, 0.70);
+  font-size: 15px;
+  font-family: Figtree;
+  font-weight: 500;
+  line-height: 19.50px;
+  word-wrap: break-word;
+}
+
+/* Style pour la liste des informations à fournir */
+.informations {
+  color: rgba(84, 78, 78, 0.70);
+  font-size: 15px;
+  font-family: Figtree;
+  font-weight: 500;
+  line-height: 19.50px;
+  word-wrap: break-word;
+}
+
+/* Style pour les notes concernant les frais de résiliation */
+.note-frais {
+  color: rgba(84, 78, 78, 0.70);
+  font-size: 15px;
+  font-family: Figtree;
+  font-weight: 500;
+  line-height: 19.50px;
+  word-wrap: break-word;
+}
+
+
+/* Style pour le conteneur du dropdown */
+.dropdown-container {
+  width: 100%; 
+  height: 100%; 
+  padding-bottom: 60px; 
+  padding-left: 213px; 
+  padding-right: 213px; 
+  background: #F8F6F5; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+/* Style pour le conteneur interne du dropdown */
+.dropdown-content {
+  gap: 20px;
+  padding: 24px 48px; 
+  background: white; 
+  border-radius: 4px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+/* Style pour l'objet */
+.objet {
+  color: #544E4E; 
+  font-size: 18px; 
+  font-family: Figtree; 
+  font-weight: 500; 
+  line-height: 21.60px; 
+  word-wrap: break-word;
+}
+
+/* Style pour le message d'accueil */
+.message {
+  color: rgba(84, 78, 78, 0.70); 
+  font-size: 15px; 
+  font-family: Figtree; 
+  font-weight: 500; 
+  line-height: 19.50px; 
+  word-wrap: break-word;
+}
+
+/* Style pour la liste des informations à fournir */
+.informations {
+  color: rgba(84, 78, 78, 0.70); 
+  font-size: 15px; 
+  font-family: Figtree; 
+  font-weight: 500; 
+  line-height: 19.50px; 
+  word-wrap: break-word;
+}
+
+/* Style pour la note des frais de résiliation */
+.note-frais {
+  color: rgba(84, 78, 78, 0.70); 
+  font-size: 15px; 
+  font-family: Figtree; 
+  font-weight: 500; 
+  line-height: 19.50px; 
+  word-wrap: break-word;
+}
+
+/* Style pour le bouton de réponse */
+.bouton-repondre {
+  padding: 10px 15px;
+  background: var(--Brand-Primary-300, #E9EE7B);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1E1E1E;
+  margin-top: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+}
+
+/* Style pour le texte du bouton de réponse */
+.bouton-repondre-text {
+  color: #1E1E1E; 
+  font-size: 16px; 
+  font-family: Figtree; 
+  font-weight: 600; 
+  word-wrap: break-word;
+}
+
+/* Style pour la date et l'heure */
+.date-heure {
+  color: rgba(84, 78, 78, 0.70); 
+  font-size: 12px; 
+  font-family: Figtree; 
+  font-weight: 400; 
+  word-wrap: break-word; 
+  text-align: right;
+}
