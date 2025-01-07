@@ -14,6 +14,8 @@ import { BrandService } from './services/brand.service';
 })
 export class AppComponent implements OnInit {
   isLoginPage: boolean = false;
+  title: string = "N'importe quoi";
+
   constructor(private analytics: AnalyticsService, private seoService: SeoService, private router: Router,
     private brandService: BrandService, private renderer: Renderer2) {
     this.router.events.subscribe(event => {
@@ -36,6 +38,6 @@ export class AppComponent implements OnInit {
     linkElement.href = theme === 'geg' ? 'assets/css/geg.css' : 'assets/css/yeli.css';
     this.renderer.appendChild(document.head, linkElement);
   }
-  }
-  
+}
+
 
