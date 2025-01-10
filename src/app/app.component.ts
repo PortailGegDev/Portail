@@ -3,6 +3,7 @@ import { AnalyticsService } from './@core/utils/analytics.service';
 import { SeoService } from './@core/utils/seo.service';
 import { NavigationEnd, Router } from '@angular/router';
 import { BrandService } from './services/brand.service';
+import { AuthService } from './core/services/auth.service';
 
 
 @Component({
@@ -16,13 +17,21 @@ export class AppComponent implements OnInit {
   isLoginPage: boolean = false;
   title: string = "N'importe quoi";
 
-  constructor(private analytics: AnalyticsService, private seoService: SeoService, private router: Router,
-    private brandService: BrandService, private renderer: Renderer2) {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.isLoginPage = event.urlAfterRedirects === '/pages/login';
-      }
-    });
+  constructor(
+    private authService : AuthService,
+    private analytics: AnalyticsService,
+    private seoService: SeoService,
+    private router: Router,
+    private brandService: BrandService,
+    private renderer: Renderer2
+  ) {
+    // this.router.events.subscribe(event => {
+    //   if (event instanceof NavigationEnd) {
+    //     this.isLoginPage = event.urlAfterRedirects === '/pages/login';
+    //   }
+    // });
+    this.router.navigate(["pages", "acceuil"]);
+    this.authService.logTokenDetails();
   }
 
   ngOnInit(): void {
