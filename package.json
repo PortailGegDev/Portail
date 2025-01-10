@@ -39,7 +39,7 @@
     "@nebular/auth": "11.0.1",
     "@nebular/eva-icons": "11.0.1",
     "@nebular/security": "11.0.1",
-    "@nebular/theme": "^10.0.0",
+    "@nebular/theme": "^14.0.2",
     "@swimlane/ngx-charts": "^16.0.0",
     "angular-oauth2-oidc": "^19.0.0",
     "angular2-chartjs": "0.4.1",

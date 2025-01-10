@@ -1,7 +1,17 @@
 applications:
   - name: geg-portal
-    buildpack: staticfile_buildpack
-    memory: 2048MB
-    disk_quota: 2048MB
+    memory: 512M
+    path: ./dist/geg-portal
+    disk_quota: 1024M
+    stack: cflinuxfs4
+    buildpacks:
+      - nodejs_buildpack
     instances: 1
-    path: dist/geg-portal-wael-kharrat 
+    routes:
+      - route: geg-portal-001.cfapps.eu10-004.hana.ondemand.com
+    env:
+      SESSION_TIMEOUT: 960
+    services:
+      - portail_client-connectivity
+      - portail_client-destination
+      - portail_client-xsuaa2
